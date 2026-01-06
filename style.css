@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: #0d1117;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0d1117, #161b22);
+}
+
+.hero span {
+  color: #58a6ff;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  color: #58a6ff;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.skill {
+  background: #161b22;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+.skill:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: #1f6feb;
+}
+
+.project-card {
+  background: #161b22;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  transition: 0.4s;
+}
+
+.project-card:hover {
+  transform: translateX(10px);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #010409;
+}
+
+/* ANIMATION */
+.fade-in {
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Project Image */
+.project-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+
+/* Tech Stack Badges */
+.stack {
+  margin: 10px 0;
+}
+
+.badge {
+  display: inline-block;
+  background: #21262d;
+  color: #58a6ff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin: 5px 5px 5px 0;
+  border: 1px solid #30363d;
+  transition: 0.3s;
+}
+
+.badge:hover {
+  background: #1f6feb;
+  color: #ffffff;
+  transform: scale(1.1);
+}
